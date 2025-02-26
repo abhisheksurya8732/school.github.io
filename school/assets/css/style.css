@@ -1,0 +1,305 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+header {
+    background: url(image/school4.jpg) no-repeat center center/cover;
+    color: white;
+    padding: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header img,
+header span {
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+nav {
+    background-color: #005f8f;
+    padding: 15px;
+    text-align: center;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #005f8f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: aqua;
+    margin-top: 40px;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.section {
+    padding: 60px 20px;
+    border-bottom: 1px solid gray;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.facility img,
+.home-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.facility,
+.home-section {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.our-facilities{
+    color: aqua;
+    font-size: 40px;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+}
+p{
+    font-size: 25px;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+}
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+.school-about {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: aqua;
+    margin-top: 40px;
+}
+
+.school-card {
+    margin: 20px auto;
+    padding: 30px;
+    background: black;
+    border-radius: 12px;
+    border: 3px solid white;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    /* background-image: url('image/school4.jpg'); */
+    /* Ensure correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    color:white;
+    /* Ensure text visibility */
+    font-size: 20px;
+}
+strong {
+    color: aqua;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+
+}
+.school-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: url(image/school4.jpg) no-repeat center center/cover;    color: aqua;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer {
+    background: black;
+    padding: 40px 20px;
+    margin-top: auto;
+    border: 1px solid white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header {
+        font-size: 24px;
+        padding: 30px 10px;
+    }
+    .footer-section {
+        min-width: 100%;
+    }
+}
